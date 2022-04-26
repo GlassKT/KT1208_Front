@@ -53,7 +53,11 @@ const LoginForm = ({
         </div>
         <div className="input-footer">
           <label>
-            <input type="checkbox" onClick={ClickCheckbox} value={checked} />
+            <label className="checkbox">
+              <input type="checkbox" onClick={ClickCheckbox} value={checked} />
+              <span className="checkbox_icon"></span>
+              <span className="checkbox_text"></span>
+            </label>
             Remember me
           </label>
           <div>Forgot Password?</div>
@@ -62,11 +66,18 @@ const LoginForm = ({
           login
         </button>
       </div>
-      <Link href="register">
-        <a>
-          <button>회원가입</button>
-        </a>
-      </Link>
+      <div className="or-line">
+        <div className="line"></div>
+        <div className="or">OR</div>
+      </div>
+      <div className="register-description">Don’t have an account?</div>
+      <div className="register-container">
+        <Link href="register">
+          <a>
+            <button className="register">Register</button>
+          </a>
+        </Link>
+      </div>
     </LoginContainer>
   );
 };

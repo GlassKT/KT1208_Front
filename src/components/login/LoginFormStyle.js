@@ -4,7 +4,6 @@ export const LoginContainer = styled.div`
   width: 788px;
   height: 829px;
   background-color: white;
-  border: 1px solid black;
 
   .login-title {
     margin-top: 71px;
@@ -108,6 +107,68 @@ export const LoginContainer = styled.div`
         margin: 0;
         font-weight: 400;
         font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .checkbox input {
+        display: none;
+      }
+      .checkbox_icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 1px solid #d9d9d9;
+        background: #ececec;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+      .checkbox_icon::before,
+      .checkbox_icon::after {
+        content: ""; // 가상요소 필수값
+        display: inline-block; // 크기 지정
+        width: 1.5px;
+        height: 0; // 체크박스가 체크가 되면 변화값으로 커지게 하기 위해 (일단 화면에는 나타나지 않음)
+        background-color: #6358dc;
+        position: absolute; // 체크박스 테두리 기준으로 위치조정 가능
+        transform-origin: left top; // 기울기 지정, 기준점을 왼쪽 상단 모서리로 (기본값은 중심임)
+      }
+
+      // 가상요소 before
+      .checkbox_icon::before {
+        top: 6.2px; // 위치값 top
+        left: 1px; // 위치값 left
+        transform: rotate(-30deg); // 회전값
+        transition: all 0.15s ease 0.15s;
+      }
+
+      // 가상요소 after
+      .checkbox_icon::after {
+        top: 15px; // 위치값 top
+        left: 7px; // 위치값 left
+        transform: rotate(-135deg); // 회전값
+        transition: all 0.15s ease;
+      }
+
+      // 체크되었을 때 테투리 설정
+      .checkbox input:checked + .checkbox_icon {
+        border: 1px solid #d9d9d9;
+      }
+
+      // 체크되었을 때 가상요소 before
+      .checkbox input:checked + .checkbox_icon::before {
+        height: 10px; // 높이값 지정
+        transition: all 0.15s ease; // 0.15초 변화시간 줌
+      }
+
+      // 체크되었을 때 가상요소 after
+      .checkbox input:checked + .checkbox_icon::after {
+        height: 20px; // 높이값 지정
+        transition: all 0.15s ease 0.15s; // 0.15초 변화시간 + 딜레이 시간 줌
       }
     }
 
@@ -127,5 +188,52 @@ export const LoginContainer = styled.div`
         filter: brightness(80%);
       }
     }
+  }
+  .or-line {
+    width: 85%;
+    margin: 0 auto;
+    height: 50px;
+    position: relative;
+
+    .line {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #bfbfbf;
+    }
+    .or {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      background-color: white;
+      width: 100px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .register-description {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .register-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .register {
+    width: 100%;
+    height: 78px;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    color: #6358dc;
+    border: none;
+    outline: none;
   }
 `;

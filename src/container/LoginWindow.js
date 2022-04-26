@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useRef, memo } from "react";
-import LoginForm from "../components/login/LoginForm";
+import LoginForm from "../components/login";
 import useInput from "../hooks/useInput";
 
 const LoginWindow = () => {
