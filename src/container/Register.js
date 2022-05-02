@@ -27,7 +27,7 @@ const Register = () => {
           name,
           email,
         });
-        console.log("회원가입: " + value);
+        console.log(value);
       } catch (e) {
         console.log(e);
       }
