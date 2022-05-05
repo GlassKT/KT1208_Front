@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 export const RegisterContainer = styled.div`
-  width: 788px;
-  height: 829px;
+  width: 41%;
+  height: 100vh;
   background-color: white;
+  position: relative;
+
+  form {
+    height: 65%;
+    width: 100%;
+  }
 
   .register-title {
     margin-top: 28px;
@@ -24,10 +30,10 @@ export const RegisterContainer = styled.div`
   }
 
   .register-form {
-    width: 671px;
-    height: 488px;
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
-    margin-top: 8px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +47,8 @@ export const RegisterContainer = styled.div`
 
     /* loginform */
     .input-form {
-      width: 671px;
-      height: 77px;
+      width: 100%;
+      height: 13%;
       background: #ececec;
       border-radius: 8px;
       padding: 20px;
@@ -51,9 +57,24 @@ export const RegisterContainer = styled.div`
       align-items: center;
       box-sizing: border-box;
       gap: 28px;
+      position: relative;
 
       .icon {
         font-size: 30px;
+      }
+
+      input[type="button"] {
+        width: 30%;
+        height: 75%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(17%) translateX(-10%);
+        background-color: #46bed8;
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
+        cursor: pointer;
       }
 
       .input {
@@ -92,9 +113,13 @@ export const RegisterContainer = styled.div`
         cursor: pointer;
       }
     }
+    .input-footer {
+      width: 100%;
+      height: 13%;
+    }
     .register-button {
-      width: 671px;
-      height: 77px;
+      width: 100%;
+      height: 100%;
       color: white;
       background: #6358dc;
       border-radius: 8px;
@@ -143,12 +168,13 @@ export const RegisterContainer = styled.div`
     margin-bottom: 20px;
   }
   .register-container {
-    width: 85%;
+    width: 88%;
+    height: 8%;
     margin: 0 auto;
   }
   .register {
     width: 100%;
-    height: 78px;
+    height: 100%;
     background: #ffffff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
     border-radius: 8px;

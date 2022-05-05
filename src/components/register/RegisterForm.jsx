@@ -84,6 +84,21 @@ const RegisterForm = ({
                 maxLength={50}
                 required
               />
+              <input type="button" value="인증번호 발송" />
+            </div>
+          </div>
+          <div className="input-form">
+            <div className="icon">별</div>
+            <div className="input">
+              <input
+                type="email"
+                className="input-input-password"
+                value={email}
+                onChange={changeEmail}
+                maxLength={50}
+                required
+              />
+              <input type="button" value="인증번호 확인" />
             </div>
           </div>
           <div className="input-footer">
