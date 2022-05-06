@@ -40,22 +40,20 @@ const Register = () => {
     pass.current.type = pass.current.type === "password" ? "text" : "password";
   }, []);
   return (
-    <div>
-      <RegisterForm
-        id={id}
-        password={password}
-        name={name}
-        email={email}
-        changeId={changeId}
-        changePassword={changePassword}
-        changeName={changeName}
-        changeEmail={changeEmail}
-        requestRegister={requestRegister}
-        passwordToggle={passwordToggle}
-        pass={pass}
-        onSubmitT={onSubmitT}
-      />
-    </div>
+    <RegisterForm
+      id={id}
+      password={password}
+      name={name}
+      email={email}
+      changeId={changeId}
+      changePassword={changePassword}
+      changeName={changeName}
+      changeEmail={changeEmail}
+      requestRegister={requestRegister}
+      passwordToggle={passwordToggle}
+      pass={pass}
+      onSubmitT={onSubmitT}
+    />
   );
 };
 
