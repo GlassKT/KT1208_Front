@@ -5,6 +5,7 @@ import wrapper from "../stores/configureStore";
 import { lightTheme } from "../styles/theme";
 import "../styles/globals.css";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const FlexBox = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ const FlexBox = styled.div`
 `;
 
 function MyApp({ Component, pageProps }) {
+  const { login } = useSelector((state) => state.user);
   return (
     <>
       <Head>
@@ -23,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={lightTheme}>
         <FlexBox>
-          <Leftbar />
+          {login && <Leftbar />}
           <Component {...pageProps} />
         </FlexBox>
       </ThemeProvider>
