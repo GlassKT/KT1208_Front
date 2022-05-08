@@ -9,10 +9,11 @@ import { useSelector } from "react-redux";
 
 const FlexBox = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff8f5;
 `;
 
 function MyApp({ Component, pageProps }) {
