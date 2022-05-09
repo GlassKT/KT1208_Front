@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Leftbar from "../common/leftbar/Leftbar.jsx";
+import Rightbar from "../common/rightbar/Rightbar.jsx";
 import wrapper from "../stores/configureStore";
 import { lightTheme } from "../styles/theme";
 import "../styles/globals.css";
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }) {
         <FlexBox>
           {login && <Leftbar />}
           <Component {...pageProps} />
+          {login && <Rightbar />}
         </FlexBox>
       </ThemeProvider>
     </>
