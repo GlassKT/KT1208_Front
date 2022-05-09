@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={lightTheme}>
         <Component {...pageProps} />
-        <RightBar />
       </ThemeProvider>
     </>
   );
