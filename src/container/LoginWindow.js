@@ -22,19 +22,17 @@ const LoginWindow = () => {
   }, []);
 
   return (
-    <div>
-      <LoginForm
-        ClickCheckbox={ClickCheckbox}
-        requestLogin={requestLogin}
-        passwordToggle={passwordToggle}
-        username={username}
-        changeUsername={changeUsername}
-        password={password}
-        changePassword={changePassword}
-        checked={checked}
-        pass={pass}
-      />
-    </div>
+    <LoginForm
+      ClickCheckbox={ClickCheckbox}
+      requestLogin={requestLogin}
+      passwordToggle={passwordToggle}
+      username={username}
+      changeUsername={changeUsername}
+      password={password}
+      changePassword={changePassword}
+      checked={checked}
+      pass={pass}
+    />
   );
 };
 

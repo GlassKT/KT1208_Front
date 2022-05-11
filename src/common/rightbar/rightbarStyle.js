@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const RightbarContainer = styled.div`
-  width: 450px;
+  width: 23%;
   height: 100vh;
   background-color: white;
   /* box-sizing: border-box; */
+  position: relative;
   /* float: right; */
 
   .Profile {
-    width: 450px;
-    height: 375px;
+    width: 100%;
+    height: 100%;
     background-color: white;
     font-family: "Nunito Sans";
     position: absolute;
@@ -20,16 +21,16 @@ export const RightbarContainer = styled.div`
       /* float: right; */
       /* margin-right: 40px; */
       /* margin-top: 40px; */
-      top: 40px;
+      top: 2%;
       right: 40px;
       font-size: 20px;
       font-weight: 700;
     }
 
     .Fofile-image {
-      width: 150px;
-      height: 150px;
-      margin-top: 72px;
+      width: 30%;
+      height: 13.9%;
+      margin-top: 8%;
       margin-left: 150px;
       font-size: 50px;
       font-weight: 500;
@@ -56,12 +57,12 @@ export const RightbarContainer = styled.div`
     }
     .Follow {
       margin-top: 24px;
-      width: 450px;
-      height: 53px;
+      width: 100%;
+      height: 4.9%;
       display: flex;
       .Follow-follwer {
-        width: 215px;
-        height: 53px;
+        width: 50%;
+        height: 4.9%;
         align-items: center;
 
         div:nth-child(1) {
@@ -78,8 +79,8 @@ export const RightbarContainer = styled.div`
         }
       }
       .Follow-following {
-        width: 215px;
-        height: 53px;
+        width: 50%;
+        height: 4.9%;
         align-items: center;
 
         div:nth-child(1) {
@@ -99,41 +100,48 @@ export const RightbarContainer = styled.div`
 
     .Writing {
       margin: 0 auto;
-      width: 370px;
-      height: 100px;
+      width: 82.2%;
+      height: 14.8%;
       margin-top: 20px;
       background: #f9f9f9;
       padding: 16px;
       border-radius: 24px;
       .belong {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         color: #77757f;
       }
       .write {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 14px;
         color: #1d1929;
         margin: 0;
       }
     }
-    .line {
-      width: 370px;
+    .line-2 {
+      width: 82.2%;
       height: 0px;
       margin: 0 auto;
-      margin-top: 32px;
+      border: 2px dashed #e8e8ea;
+      margin-top: 10%;
+    }
+    .line {
+      width: 82.2%;
+      height: 0px;
+      margin: 0 auto;
+      margin-top: 3%;
       border: 2px dashed #e8e8ea;
     }
   }
   .alarm {
-    width: 370px;
-    height: 356px;
+    width: 82.2%;
+    height: 35%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     .alarm-Bar {
-      width: 370px;
-      height: 40px;
+      width: 82.2%;
+      height: 11.2%;
       display: flex;
       align-content: center;
       align-items: center;
@@ -141,11 +149,13 @@ export const RightbarContainer = styled.div`
       position: relative;
       margin-bottom: 20px;
       .alarm-Image {
-        width: 30px;
-        height: 30px;
+        width: 7.8%;
         /* float: left; */
+        height: 100%;
+        margin: 0;
+        text-align: center;
         position: absolute;
-        font-size: 30px;
+        font-size: 15px;
         left: 0;
         top: 1px;
         /* margin-right: 10px; */
@@ -153,50 +163,51 @@ export const RightbarContainer = styled.div`
       .alarm-Denote {
         margin-left: 40px;
         margin-right: 5px;
-        width: 60px;
-        height: 38px;
+        width: 13.3%;
+        /* height: 10.6%; */
         font-family: "Nunito Sans";
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 15px;
         color: #1d1929;
       }
 
       .alarm-Count {
-        width: 24px;
-        height: 24px;
+        width: 6%;
+        height: 40%;
         /* float: left; */
         /* margin-right: 5px; */
         background-color: #ccd8ff;
+        font-size: 80%;
         color: #003cff;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 5px;
       }
     }
     .alarm-List {
-      height: 252px;
-
+      height: 70.9%;
+      width: 100%;
       .alarm-wrapper {
         display: flex;
         margin-bottom: 16px;
       }
       .image {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         background-color: darkblue;
         border-radius: 50%;
       }
       .des {
-        margin: 16px;
+        margin: 5%;
         color: #77757f;
         font-weight: 700;
         width: 100%;
       }
       .apply {
-        margin-left: 16px;
-        margin-right: 16px;
-        width: 57px;
-        height: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 15%;
+        height: 30%;
         border-radius: 8px;
         background-color: #d7e5ff;
         border: none;
@@ -204,8 +215,8 @@ export const RightbarContainer = styled.div`
         color: #4d77ff;
       }
       .refuse {
-        width: 57px;
-        height: 25px;
+        width: 15%;
+        height: 30%;
         border-radius: 8px;
         background-color: #e7e7e7;
         border: none;
